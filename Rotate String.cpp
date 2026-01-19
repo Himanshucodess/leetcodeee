@@ -1,6 +1,7 @@
 #Input: s = "abcde", goal = "cdeab" Output: true
 
-
+bas string ko add kro aur goalko check krlo 
+(s+s) -> goal
 
 class Solution {
 public:
@@ -15,4 +16,5 @@ if (s.size() != goal.size()) return false;
 
 return false;
  }
+
 };
