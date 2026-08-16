@@ -61,3 +61,21 @@ public:
 
 
 (set contains only unique ele but this sol takes 0(n) but we have to do it in o(1))
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        
+        int n= nums.size();
+        int i=0;
+        for( int j=1;j<n;j++){
+            if(nums[i]!=nums[j]){
+                nums[i+1]=nums[j];
+                i++;
+            }
+        }
+return i+1;
+    }
+};
+
+#(bs 2 pointer approach compare kro i=0 , j=1 fir jp unequal h usse a[i+1]=a[j] )
